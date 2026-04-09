@@ -1,0 +1,12 @@
+n=[1,2,2,3,4,5,5,2,2]
+m=[10,2,3,4,5,6]
+Hash_list = [0]*10
+for num in n:
+    if 0<= num < 10:
+        Hash_list[num]+=1
+        
+for num in m:
+    if 0<= num < 10:
+        print(Hash_list[num])
+    else:
+        print(0)
