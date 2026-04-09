@@ -1,0 +1,11 @@
+s="aaaaabcddddd"
+p=["a","b","c","d"]
+Hash_list=[0]*26
+for ch in s:
+    ascii_val = ord(ch)
+    index=ascii_val-97
+    Hash_list[index]+=1
+for ch in p:
+    ascii_val = ord(ch)
+    index=ascii_val-97
+    print(f"{ch}:{Hash_list[index]}")
