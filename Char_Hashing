@@ -9,3 +9,16 @@ for ch in p:
     ascii_val = ord(ch)
     index=ascii_val-97
     print(f"{ch}:{Hash_list[index]}")
+
+s="AABCA$a"
+p=["A","B","a","$"]
+Hash_List = [0]*127
+for ch in s:
+    index = ord(ch)
+    Hash_List[index]+=1
+for ch in p:
+    index = ord(ch)
+    print(f"{ch}:{Hash_List[index]}")
+    
+
+
