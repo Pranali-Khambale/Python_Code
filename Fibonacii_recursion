@@ -1,0 +1,5 @@
+def fib(nums):
+    if nums==1 or nums==0:
+        return nums
+    return fib(nums-1)+fib(nums-2)
+print(fib(6)) 
