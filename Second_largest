@@ -3,3 +3,13 @@ arr.sort()
 print(arr[-2])
 
 //Second Largest
+arr=[3,4,6,5,77]
+n=len(arr)
+lar=float("-inf")
+s_lar=float("-inf")
+for i in range(0,n):
+    lar=max(lar,arr[i])
+for i in range(0,n) :
+    if arr[i]>s_lar and arr[i]!=lar:
+        s_lar=arr[i]
+print(s_lar)  
