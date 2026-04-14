@@ -1,8 +1,9 @@
+//1.
 arr=[3,4,6,5,77]
 arr.sort()
 print(arr[-2])
 
-//Second Largest
+//2.Second Largest
 arr=[3,4,6,5,77]
 n=len(arr)
 lar=float("-inf")
@@ -13,3 +14,15 @@ for i in range(0,n) :
     if arr[i]>s_lar and arr[i]!=lar:
         s_lar=arr[i]
 print(s_lar)  
+//3
+arr=[2,3,6,5,1]
+n=len(arr)
+lar=float("-inf")
+s_lar=float("-inf")
+for i in range(0,n):
+    if arr[i]>lar:
+        s_lar=lar
+        lar=arr[i]
+    elif arr[i]>s_lar and arr[i]!=lar:
+        s_lar=arr[i]
+print(s_lar)        
