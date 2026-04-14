@@ -1,0 +1,6 @@
+arr=[3,4,6,5,77]
+largest=float("-inf")
+n=len(arr)
+for i in range(0,n):
+    largest=max(largest,arr[i])
+print (largest)    
