@@ -1,0 +1,5 @@
+arr=[3,4,6,5,77]
+arr.sort()
+print(arr[-2])
+
+//Second Largest
