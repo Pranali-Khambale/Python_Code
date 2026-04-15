@@ -1,0 +1,9 @@
+def is_Sorted(num):
+    n=len(num)
+    for i in range(0,n-1):
+        if num[i]>num[i+1]:
+            return False
+    return True
+num=[1,2,3,4]
+print(is_Sorted(num))
+        
