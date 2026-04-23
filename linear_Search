@@ -1,0 +1,10 @@
+def linear_search(num,target):
+    n=len(num)
+    for i in range(0,n):
+        if num[i]==target:
+            return i
+    return -1
+num=[1,2,3,4,5]
+target=5
+result=linear_search(num,target)
+print(result)
