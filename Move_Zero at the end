@@ -1,0 +1,13 @@
+1.Brute Solution
+num=[1,2,0,3,0,4,0,5]
+n=len(num)
+temp=[]
+for i in range(0,n):
+    if num[i] != 0:
+        temp.append(num[i])
+nz=len(temp)
+for i in range(0,nz):
+    num[i]=temp[i]
+for i in range(nz,n):
+    num[i]=0
+print(num)   
