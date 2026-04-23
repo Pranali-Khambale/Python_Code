@@ -11,3 +11,25 @@ for i in range(0,nz):
 for i in range(nz,n):
     num[i]=0
 print(num)   
+
+2.optimal solution
+
+def move_zero(num):
+    if len(num)==1:
+        return
+    i=0
+    while i<len(num):
+        if num[i]==0:
+            break
+        i+=1
+    if i==len(num):
+        return
+    j=i+1
+    while j<len(num):
+        if num[j]!=0:
+            num[i],num[j]=num[j],num[i]
+            i+=1
+        j+=1
+num=[1,0,2,3,0,4,0,8]
+move_zero(num)
+print(num)
