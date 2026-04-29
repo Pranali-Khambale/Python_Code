@@ -1,0 +1,30 @@
+1.
+num=[5,10,-3,-1,-10,6]
+n=len(num)
+pos=[]
+neg=[]
+for i in range(0,n):
+    if num[i]<0:
+        pos.append(num[i])
+    else:
+        neg.append(num[i])
+limit=min(len(pos),len(neg))
+for j in range(0,limit):
+    num[2*j]=pos[j]
+    num[(2*j)+1]=neg[j]
+print(num)    
+O/p:[-3, 5, -1, 10, -10, 6]
+
+2.
+num=[5,10,-3,-1,-10,6]
+n=len(num)
+result=[0]*n
+posI,negI=0,1
+for i in range(0,n):
+    if num[i]>=0:
+        result[posI]=num[i]
+        posI+=2
+    else:
+        result[negI]=num[i]
+        negI+=2
+print(result)  
