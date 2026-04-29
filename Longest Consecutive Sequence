@@ -1,0 +1,32 @@
+1.
+nums=[1,99,101,98,2,5,3,100,1,1]
+n=len(nums)
+max_count=0
+for i in range(0,n):
+    num=nums[i]
+    count=1
+    while num+1 in nums:
+        count+=1
+        num=num+1
+    max_count=max(max_count,count)    
+print(max_count)    
+
+2.
+nums=[1,99,101,98,2,5,3,100,1,1]
+nums.sort()
+max_count=0
+last_sml=float("inf")
+longest=0
+n=len(nums)
+for i in range(0,n):
+    num=nums[i]
+    if num-1==last_sml:
+        count+=1
+        last_sml=num
+    elif num!=last_sml:
+        count=1
+        last_sml=num
+    longest=max(longest,count)
+print(longest)        
+        
+
